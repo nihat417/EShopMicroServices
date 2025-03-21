@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>28ca2cc1-9630-41e2-aa26-d74ee109dd24</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Products\DeleteProduct\" />
+    <Folder Include="Products\GetProductByCategory\" />
+    <Folder Include="Products\GetProductById\" />
+    <Folder Include="Products\GetProducts\" />
+    <Folder Include="Products\UpdateProduct\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\BuildingLocks\BuildingLocks.csproj" />
+  </ItemGroup>
+
+</Project>
