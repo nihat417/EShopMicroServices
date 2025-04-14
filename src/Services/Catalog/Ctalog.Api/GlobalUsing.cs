@@ -4,3 +4,4 @@ global using MediatR;
 global using BuildingLocks.CQRS;
 global using Ctalog.Api.Models;
 global using Marten;
+global using Ctalog.Api.CustomExceptions;
